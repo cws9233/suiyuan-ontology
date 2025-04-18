@@ -1,0 +1,1236 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://purl.archive.org/suiyuan-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://purl.archive.org/suiyuan-ontology">
+    <Prefix name="" IRI="https://purl.archive.org/suiyuan-ontology#"/>
+    <Prefix name="ex" IRI="https://purl.archive.org/suiyuan-ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="zh">
+            北京大学信息管理系《信息表示与知识图谱》第十组：《随园食单》本体
+            小组成员：崔元皙 丁健 常赛龙 于宸凌
+        </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Beans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChaJiuDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexFlavor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DianXinDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FanZhouDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FatsAndOils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fragrance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fungi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HaiXianDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JiangXianDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occasion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seafood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seasoning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShuiZuWuLinDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShuiZuYouLinDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeShengDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Umami"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utensil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XiaoCaiDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YuZuDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZaHuiDan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZaSuCaiDan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BestOrginatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#WorstOriginatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#goesBetterWhen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCookingTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMainIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTaste"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBestCookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWorstCookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#originatedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesUtensil"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StepOrder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#一碗汤"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#两碗汤"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#关火"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#加入"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#去骨"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#吴竹屿"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#拆碎"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#浓郁的汤"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#煨汤"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#煮"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#生姜末"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#甲鱼"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#白煮"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#秋油"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#纤"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#花椒"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#葱花"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#酒"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#鸡汤"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Beans"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bitter"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChaJiuDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexFlavor"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookingStep"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#StepOrder"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DianXinDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dish"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dish"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasStep"/>
+            <Class IRI="#CookingStep"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dish"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#usesCookingMethod"/>
+            <Class IRI="#CookingMethod"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FanZhouDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FatsAndOils"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fragrance"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fungi"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HaiXianDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JiangXianDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessingMethod"/>
+        <Class IRI="#CookingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salty"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seafood"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seasoning"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShuiZuWuLinDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShuiZuYouLinDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sour"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spice"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spicy"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeShengDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Umami"/>
+        <Class IRI="#Taste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XiaoCaiDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YuZuDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZaHuiDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ZaSuCaiDan"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#FoodState"/>
+        <NamedIndividual IRI="#一碗汤"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodState"/>
+        <NamedIndividual IRI="#两碗汤"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingMethod"/>
+        <NamedIndividual IRI="#关火"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingMethod"/>
+        <NamedIndividual IRI="#加入"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessingMethod"/>
+        <NamedIndividual IRI="#去骨"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#People"/>
+        <NamedIndividual IRI="#吴竹屿"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessingMethod"/>
+        <NamedIndividual IRI="#拆碎"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ShuiZuWuLinDan"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodState"/>
+        <NamedIndividual IRI="#浓郁的汤"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingMethod"/>
+        <NamedIndividual IRI="#煨汤"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingMethod"/>
+        <NamedIndividual IRI="#煮"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#生姜末"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seafood"/>
+        <NamedIndividual IRI="#甲鱼"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessingMethod"/>
+        <NamedIndividual IRI="#白煮"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seasoning"/>
+        <NamedIndividual IRI="#秋油"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ingredient"/>
+        <NamedIndividual IRI="#纤"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#花椒"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#葱花"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seasoning"/>
+        <NamedIndividual IRI="#酒"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ingredient"/>
+        <NamedIndividual IRI="#鸡汤"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMainIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#甲鱼"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#秋油"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#纤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#花椒"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#葱花"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#鸡汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBestCookedBy"/>
+        <NamedIndividual IRI="#汤煨甲鱼"/>
+        <NamedIndividual IRI="#吴竹屿"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <NamedIndividual IRI="#甲鱼"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <NamedIndividual IRI="#去骨"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <NamedIndividual IRI="#拆碎"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <NamedIndividual IRI="#白煮"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#一碗汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#两碗汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#秋油"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#酒"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#鸡汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <NamedIndividual IRI="#煨汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#生姜末"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#花椒"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#葱花"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#关火"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <NamedIndividual IRI="#加入"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+        <NamedIndividual IRI="#浓郁的汤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTarget"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+        <NamedIndividual IRI="#纤"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+        <NamedIndividual IRI="#加入"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StepOrder"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StepOrder"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StepOrder"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StepOrder"/>
+        <NamedIndividual IRI="#汤煨甲鱼步骤_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#BestOrginatedFrom"/>
+        <ObjectProperty IRI="#originatedFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#WorstOriginatedFrom"/>
+        <ObjectProperty IRI="#originatedFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#goesBetterWhen"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMainIngredient"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <ObjectProperty IRI="#hasStep"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResult"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStep"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubIngredient"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTarget"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBestCookedBy"/>
+        <ObjectProperty IRI="#isCookedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isWorstCookedBy"/>
+        <ObjectProperty IRI="#isCookedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#originatedFrom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+    </SubObjectPropertyOf>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasNextStep"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasStep"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#goesBetterWhen"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCookingTime"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResult"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTaste"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCookedBy"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#originatedFrom"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesUtensil"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#People"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#goesBetterWhen"/>
+        <Class IRI="#Occasion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCookingTime"/>
+        <Class IRI="#Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextStep"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResult"/>
+        <Class IRI="#FoodState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#CookingStep"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTaste"/>
+        <Class IRI="#Taste"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCookedBy"/>
+        <Class IRI="#People"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#originatedFrom"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesCookingMethod"/>
+        <Class IRI="#CookingMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesProcessingMethod"/>
+        <Class IRI="#ProcessingMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesUtensil"/>
+        <Class IRI="#Utensil"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Size"/>
+        <Class IRI="#Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StepOrder"/>
+        <Class IRI="#CookingStep"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Size"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StepOrder"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Beans</IRI>
+        <Literal xml:lang="zh">豆类</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bitter</IRI>
+        <Literal xml:lang="zh">苦</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChaJiuDan</IRI>
+        <Literal xml:lang="zh">茶酒单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ComplexFlavor</IRI>
+        <Literal xml:lang="zh">复合味</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CookingMethod</IRI>
+        <Literal xml:lang="zh">烹饪方法</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CookingStep</IRI>
+        <Literal xml:lang="zh">烹饪步骤</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DianXinDan</IRI>
+        <Literal xml:lang="zh">点心单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dish</IRI>
+        <Literal xml:lang="en">Dish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dish</IRI>
+        <Literal xml:lang="zh">菜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FanZhouDan</IRI>
+        <Literal xml:lang="zh">饭粥单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FatsAndOils</IRI>
+        <Literal xml:lang="zh">油脂类</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FoodState</IRI>
+        <Literal xml:lang="zh">表示烹饪具体步骤中的中间结果</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FoodState</IRI>
+        <Literal xml:lang="zh">食物状态</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fragrance</IRI>
+        <Literal xml:lang="zh">香</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fungi</IRI>
+        <Literal xml:lang="zh">菌藻类</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HaiXianDan</IRI>
+        <Literal xml:lang="zh">海鲜单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ingredient</IRI>
+        <Literal xml:lang="zh">可能会有大小信息，也可能没有</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ingredient</IRI>
+        <Literal xml:lang="zh">食材</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JiangXianDan</IRI>
+        <Literal xml:lang="zh">江鲜单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meat</IRI>
+        <Literal xml:lang="en">Meat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meat</IRI>
+        <Literal xml:lang="zh">肉类</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Occasion</IRI>
+        <Literal xml:lang="zh">场景</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#People</IRI>
+        <Literal xml:lang="zh">人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProcessingMethod</IRI>
+        <Literal xml:lang="zh">食材预处理方法</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="zh">地域</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Salty</IRI>
+        <Literal xml:lang="zh">咸</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seafood</IRI>
+        <Literal xml:lang="en">Seafood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seafood</IRI>
+        <Literal xml:lang="zh">水产品</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seasoning</IRI>
+        <Literal xml:lang="zh">调味品</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShuiZuWuLinDan</IRI>
+        <Literal xml:lang="zh">水族无鳞单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShuiZuYouLinDan</IRI>
+        <Literal xml:lang="zh">水族有鳞单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Size</IRI>
+        <Literal xml:lang="zh">食材的大小</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sour</IRI>
+        <Literal xml:lang="zh">酸</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spice</IRI>
+        <Literal xml:lang="en">Spice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spice</IRI>
+        <Literal xml:lang="zh">香料</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spicy</IRI>
+        <Literal xml:lang="zh">辣</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StepOrder</IRI>
+        <Literal xml:lang="zh">用来表示烹饪步骤的具体顺序，虽然对象属性中的hasNextStep的传递性保证了一定的顺序，这个数据属性只是用来作补充</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sweet</IRI>
+        <Literal xml:lang="zh">甜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Taste</IRI>
+        <Literal xml:lang="en">TasteProfile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Taste</IRI>
+        <Literal xml:lang="zh">味道</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TeShengDan</IRI>
+        <Literal xml:lang="zh">特牲单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Time</IRI>
+        <Literal xml:lang="zh">该类用来表示一个具体烹饪步骤的时间实例</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Time</IRI>
+        <Literal xml:lang="zh">时间</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Umami</IRI>
+        <Literal xml:lang="zh">鲜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Utensil</IRI>
+        <Literal xml:lang="en">Utensil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Utensil</IRI>
+        <Literal xml:lang="zh">厨具</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vegetable</IRI>
+        <Literal xml:lang="en">Vegetable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vegetable</IRI>
+        <Literal xml:lang="zh">蔬菜</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#XiaoCaiDan</IRI>
+        <Literal xml:lang="zh">小菜单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#YuZuDan</IRI>
+        <Literal xml:lang="zh">羽族单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZaHuiDan</IRI>
+        <Literal xml:lang="zh">杂烩单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZaSuCaiDan</IRI>
+        <Literal xml:lang="zh">杂素材单</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createdBy</IRI>
+        <Literal xml:lang="zh">表示一个菜的发明人</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#goesBetterWhen</IRI>
+        <Literal xml:lang="zh">表示一个菜的适用场景（如：醒酒时）</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCookingTime</IRI>
+        <Literal xml:lang="zh">用来表示一个步骤需要多长时间</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIngredient</IRI>
+        <Literal xml:lang="en">hasIngredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMainIngredient</IRI>
+        <Literal xml:lang="zh">主食材</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNextStep</IRI>
+        <Literal xml:lang="zh">这是具有传递性的对象属性，步骤到步骤的连接</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResult</IRI>
+        <Literal xml:lang="zh">用来描述具体烹饪步骤中的小结果
+EX) 西红柿炒鸡蛋步骤1（将西红柿切成四块）
+这个实例hasResult四块西红柿。由于它的结果可以是食材，也可以是菜，因此不设置值域。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStep</IRI>
+        <Literal xml:lang="zh">用来表示一个菜是有做菜步骤的</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSubIngredient</IRI>
+        <Literal xml:lang="zh">副食材</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTarget</IRI>
+        <Literal xml:lang="zh">用来描述具体烹饪步骤中，被处理的东西
+EX) 西红柿炒鸡蛋步骤1是一个实例，这个实例hasTarget西红柿</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTaste</IRI>
+        <Literal xml:lang="zh">描述一个菜的味道，不表示一个食材的味道</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCookedBy</IRI>
+        <Literal xml:lang="zh">用来表示厨师，而不是开发人，开发人用的对象属性是：createdBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#originatedFrom</IRI>
+        <Literal xml:lang="zh">表示一个菜或食材的来源地方</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesCookingMethod</IRI>
+        <Literal xml:lang="zh">该对象属性用来表示一个具体步骤的动作，包括食材预处理和烹饪，因此有子对象属性（usesProcessingMethod——食材预处理）</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesUtensil</IRI>
+        <Literal xml:lang="zh">用来描述具体烹饪步骤中，用的厨具
+EX) 西红柿炒鸡蛋步骤1是一个实例，这个实例usesUtensil刀</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
